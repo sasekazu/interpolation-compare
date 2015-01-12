@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Interpolation</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/numeric-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div>
+			<p>
+			下の枠内で<b>データ点をドラッグしてデータ点移動</b>．<b>ダブルクリックでデータ点追加</b>．<br />
+			</p>
+		</div>
+		<div>
+			<input type="button" value="Reset" id="reset" style="margin: 10px;">
+			<label><input id="LagrangeCheckBox" type="checkbox" checked>ラグランジュ補間（赤）</label>
+			<label><input id="SplineCheckBox" type="checkbox" checked>３次スプライン補間（緑）</label>
+		</div>
+		<div>
+			<canvas id="myCanvas" width="1000" height="600" style="border: solid 1px;"></canvas>
+		</div>
+		<div>
+			<h3>ソースコード</h3>
+			<ul>
+				<li><a href="https://github.com/sasekazu/interpolation-compare">GitHub</a></li>
+				<li><a href="https://gist.github.com/sasekazu/2f43b02c100892a4cb52">Gist</a> Lagrange補間部抜粋</li>
+				<li><a href="https://gist.github.com/sasekazu/33e3929f4fec650c874b">Gist</a> 3次Spline補間部抜粋</li>
+			</ul>
+			<h4>参考資料</h4>
+			<ul>
+				<li>高橋大輔，数値計算，岩波書店，1996.</li>
+			</ul>
+		</div>
+	</div>
+	<footer style="text-align: center;">
+		<a href="http://www.sasekazu.info">sasekazu.info</a>
+	</footer>
+</body>
+</html>
